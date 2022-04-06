@@ -1,18 +1,22 @@
 main {
     max-width: 200px;
     text-align: center;
+    margin: auto;
+    border: 1px solid black;
+    padding: 10px;
 }
+
 * {
     box-sizing: border-box;
 }
+
 article {
     display: grid;
-    grid-template-areas:
-        "kij kij"
-        "szam muv";
+    grid-template-areas: "kij kij" "szam muv";
     grid-template-columns: 2fr 1fr;
     grid-gap: 5px;
 }
+
 .kijelzo {
     grid-area: kij;
     border: 1px solid gray;
@@ -22,12 +26,15 @@ article {
     font-weight: bold;
     padding: 5px;
 }
+
 .szamok {
-   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
 }
-.szamok button {
-    
-}
+
+.szamok button {}
+
 .muvjelek {
     grid-area: muv;
     margin: auto;
@@ -35,7 +42,7 @@ article {
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
 }
+
 .muvjelek button {
-  
     width: 30px;
 }
